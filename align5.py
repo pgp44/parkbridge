@@ -170,10 +170,10 @@ def apply_homography_and_save(images_folder, output_folder, reference_image, reg
 def main():
     # Set the folder paths
     images_folder = "images"
-    output_folder = "warped"
+    output_folder = "images_warped"
 
     # Load the reference image
-    reference_image_path = os.path.join('.', "reference_20240701_074430.jpg")
+    reference_image_path = os.path.join(images_folder, "IMG_20240820_074416.jpg")
     reference_image = cv2.imread(reference_image_path)
 
     if reference_image is None:
