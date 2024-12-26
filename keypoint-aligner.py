@@ -339,6 +339,7 @@ def align_images(reference_image_path, image_folder, output_folder):
             # print(f"'{output_path}' exists. Skipping alignment for '{filename}'...")
             continue
 
+        print(f"Aligning {filename} with {reference_image_path}")
         img = cv2.imread(image_path, cv2.IMREAD_COLOR)
         if img is None:
             print(f"Warning: Unable to load image '{image_path}', skipping.")
