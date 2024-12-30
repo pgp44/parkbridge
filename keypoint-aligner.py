@@ -468,5 +468,5 @@ if __name__ == "__main__":
     first_image_date = extract_start_date(f"{args.output_folder}_cropped")
     steps=convert_pedometer_file(args.step_counter,first_image_date)
     #
-    create_stop_motion_movie_with_steps(f"{args.output_folder}_cropped",args.stop_motion,steps,1.5,0.8,30,args.audio)
+    create_stop_motion_movie_with_steps(f"{args.output_folder}_cropped",args.stop_motion,steps,1.2,0.5,30,args.audio)
     print("Stop motion creation completed.")
